@@ -23,9 +23,10 @@
         --memoria-bg: #ffb21e;
         --verbal-bg: #00bb8f;
         --visual-bg: #1125d6;
+        --very-light-blue: #ecf2ff;
     body {
         font-size: 1.6rem;
-    
+      background-color: var(--very-light-blue);
      }
     
     .Resultado {
@@ -78,6 +79,7 @@
 
      .Resumo{
         padding: 2.4rem 3.2rem;
+        background: var(--white);
      }
 
      .Resumo h2{
@@ -141,3 +143,63 @@
       font-weight: 700;
 
      }
+
+     @media (min-widhth: 736px){
+      body{
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      main{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 736px;
+         background: var(--white);
+         border-radius: 3.2rem 0 0 3.2rem;
+      }
+
+      .Resultado{
+         padding-block: 3.8rem;
+         border-radius: 3.2rem;
+      }
+      section{
+         width: 100%;
+      }
+
+   .Resultado h1{
+      font-size: 2.4rem;
+      }
+   .Resultado div {`
+      width: 20rem;
+      height: 20rem;
+   }   
+
+   .Resultado div strong:nth-of-type(1){
+      font-size: 7.2rem;
+   }
+
+   .Resultado div strong:nth-of-type(2){
+      font-size: 1.8rem;
+
+    }
+
+    .Resultado h2{
+      font-size: 3.2rem; 
+      margin-bottom: 1.6rem;
+    }
+    .Resultado p{
+      font-size: 1.8rem;
+    
+   }
+
+   .Resumo{
+      padding: 3.8rem 4rem;
+   }
+   .Resumo h2{
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+   }
+}
