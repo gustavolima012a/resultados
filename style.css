@@ -34,7 +34,7 @@
         background: var(--resultado-bg);
         text-align: center;
         color: var(--white);
-        border-radius: 0 0 3.7rem 3.2rem;
+        border-radius: 0 0 3.2rem 3.2rem;
      }
 
      .Resultado h1{
@@ -144,7 +144,9 @@
 
      }
 
-     @media (min-widhth: 736px){
+
+
+     @media (min-width: 736px){
       body{
         min-height: 100svh;
         display: flex;
@@ -171,6 +173,7 @@
 
    .Resultado h1{
       font-size: 2.4rem;
+      margin-bottom: 3.6rem;
       }
    .Resultado div {`
       width: 20rem;
